@@ -1,0 +1,195 @@
+{
+    "created_at": "2025-12-14T16:19:21-06:00",
+    "metadata": {
+        "description": null,
+        "run_start": "2025-12-14T16:15:50.908-06:00",
+        "run_end": "2025-12-14T16:19:21.514-06:00",
+        "name": "Variable_Strength_Back_Action_Tomography",
+        "data_path": "2025-12-14/#209_Variable_Strength_Back_Action_Tomography_161921"
+    },
+    "data": {
+        "parameters": {
+            "model": {
+                "qubits": [
+                    "q4"
+                ],
+                "num_shots": 50000,
+                "photon_numbers": [
+                    0.01,
+                    0.02,
+                    0.05,
+                    0.1,
+                    0.2,
+                    0.5,
+                    1.0,
+                    2.0
+                ],
+                "weak_readout_duration_ns": 300,
+                "strong_readout_duration_ns": 300,
+                "ringdown_time_ns": 400,
+                "repetition_delay_ns": 8000,
+                "flux_point_joint_or_independent": "independent",
+                "reset_type_thermal_or_active": "active",
+                "conditional_map_bins": 51,
+                "T1_us": 50.0,
+                "T2_us": 30.0,
+                "tau_us": 0.62,
+                "simulate": false,
+                "simulation_duration_ns": 2500,
+                "timeout": 100,
+                "load_data_id": null,
+                "min_counts_per_bin": 20,
+                "smoothing_sigma": 1.0
+            },
+            "schema": {
+                "additionalProperties": false,
+                "properties": {
+                    "qubits": {
+                        "anyOf": [
+                            {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "default": [
+                            "q4"
+                        ],
+                        "title": "Qubits"
+                    },
+                    "num_shots": {
+                        "default": 50000,
+                        "title": "Num Shots",
+                        "type": "integer"
+                    },
+                    "photon_numbers": {
+                        "default": [
+                            0.01,
+                            0.02,
+                            0.05,
+                            0.1,
+                            0.2,
+                            0.5,
+                            1.0,
+                            2.0
+                        ],
+                        "items": {
+                            "type": "number"
+                        },
+                        "title": "Photon Numbers",
+                        "type": "array"
+                    },
+                    "weak_readout_duration_ns": {
+                        "default": 300,
+                        "title": "Weak Readout Duration Ns",
+                        "type": "integer"
+                    },
+                    "strong_readout_duration_ns": {
+                        "default": 300,
+                        "title": "Strong Readout Duration Ns",
+                        "type": "integer"
+                    },
+                    "ringdown_time_ns": {
+                        "default": 400,
+                        "title": "Ringdown Time Ns",
+                        "type": "integer"
+                    },
+                    "repetition_delay_ns": {
+                        "default": 8000,
+                        "title": "Repetition Delay Ns",
+                        "type": "integer"
+                    },
+                    "flux_point_joint_or_independent": {
+                        "default": "independent",
+                        "enum": [
+                            "joint",
+                            "independent"
+                        ],
+                        "title": "Flux Point Joint Or Independent",
+                        "type": "string"
+                    },
+                    "reset_type_thermal_or_active": {
+                        "default": "active",
+                        "enum": [
+                            "thermal",
+                            "active"
+                        ],
+                        "title": "Reset Type Thermal Or Active",
+                        "type": "string"
+                    },
+                    "conditional_map_bins": {
+                        "default": 51,
+                        "title": "Conditional Map Bins",
+                        "type": "integer"
+                    },
+                    "T1_us": {
+                        "default": 50.0,
+                        "title": "T1 Us",
+                        "type": "number"
+                    },
+                    "T2_us": {
+                        "default": 30.0,
+                        "title": "T2 Us",
+                        "type": "number"
+                    },
+                    "tau_us": {
+                        "default": 0.62,
+                        "title": "Tau Us",
+                        "type": "number"
+                    },
+                    "simulate": {
+                        "default": false,
+                        "title": "Simulate",
+                        "type": "boolean"
+                    },
+                    "simulation_duration_ns": {
+                        "default": 2500,
+                        "title": "Simulation Duration Ns",
+                        "type": "integer"
+                    },
+                    "timeout": {
+                        "default": 100,
+                        "title": "Timeout",
+                        "type": "integer"
+                    },
+                    "load_data_id": {
+                        "anyOf": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "default": null,
+                        "title": "Load Data Id"
+                    },
+                    "min_counts_per_bin": {
+                        "default": 20,
+                        "title": "Min Counts Per Bin",
+                        "type": "integer"
+                    },
+                    "smoothing_sigma": {
+                        "default": 1.0,
+                        "title": "Smoothing Sigma",
+                        "type": "number"
+                    }
+                },
+                "title": "Parameters",
+                "type": "object"
+            }
+        },
+        "outcomes": {
+            "q4": "successful"
+        },
+        "quam": "./quam_state"
+    },
+    "id": 209,
+    "parents": [
+        208
+    ]
+}

@@ -1,0 +1,2110 @@
+{
+    "device_name": "Qolab Start (2025-11-24)",
+    "qubits": {
+        "q0": {
+            "id": "q0",
+            "xy": {
+                "operations": {
+                    "x180_DragCosine": {
+                        "length": 40,
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.06483787396784904,
+                        "alpha": 0.0,
+                        "anharmonicity": "#/qubits/q0/anharmonicity",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.43433106118873227,
+                        "alpha": "#../x180_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 3.141592653589793,
+                        "amplitude": 0.35219326647588817,
+                        "alpha": "#../x180_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y180_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": "#../x180_DragCosine/amplitude",
+                        "alpha": "#../x180_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x180_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": 0.42185786863595415,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": -1.5707963267948966,
+                        "amplitude": 0.385038112776108,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x180_Square": {
+                        "length": 100,
+                        "digital_marker": "ON",
+                        "amplitude": 0.25,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y180_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.25,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x180": "#./x180_DragCosine",
+                    "x90": "#./x90_DragCosine",
+                    "-x90": "#./-x90_DragCosine",
+                    "y180": "#./y180_DragCosine",
+                    "y90": "#./y90_DragCosine",
+                    "-y90": "#./-y90_DragCosine",
+                    "saturation": {
+                        "length": 20000,
+                        "digital_marker": "ON",
+                        "amplitude": 0.06330483194332284,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "intermediate_frequency": 239000000.0,
+                "core": "q0",
+                "opx_output": "#/wiring/qubits/q0/xy/opx_output",
+                "__class__": "quam.components.channels.MWChannel"
+            },
+            "z": {
+                "operations": {
+                    "const": {
+                        "length": 64000,
+                        "amplitude": 1.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z0": {
+                        "length": 32,
+                        "amplitude": 0.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z90": {
+                        "length": 32,
+                        "amplitude": 0.05256911449159879,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z180": {
+                        "length": 32,
+                        "amplitude": 0.07434395467596303,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-z90": {
+                        "length": 32,
+                        "amplitude": 0.09105237720835445,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "opx_output": "#/wiring/qubits/q0/z/opx_output",
+                "independent_offset": -0.30137681340386224,
+                "joint_offset": -0.6036061095359169,
+                "min_offset": -0.2769893717301796,
+                "arbitrary_offset": 0.5006238880390077,
+                "step_response_model_parameters": {
+                    "degree": 3,
+                    "knots": [
+                        -7.585026652029163,
+                        -7.585026652029163,
+                        -7.585026652029163,
+                        -7.585026652029163,
+                        -7.130768280269016,
+                        -6.917214629683547,
+                        -6.774690718274135,
+                        -6.667561540084393,
+                        -6.508638306165727,
+                        -6.447331783887806,
+                        -6.393618634889395,
+                        -6.3448615651886175,
+                        -6.301899454376611,
+                        -6.226945306635737,
+                        -6.193141970481181,
+                        -6.162411561764488,
+                        -6.133712660915805,
+                        -6.106793246940152,
+                        -6.080921907623926,
+                        -6.05700040663396,
+                        -6.0343280287798935,
+                        -6.012780770091995,
+                        -5.991825815993574,
+                        -5.972242795309446,
+                        -5.953504835665291,
+                        -5.935542010773081,
+                        -5.9179330657148865,
+                        -5.901356274182943,
+                        -5.885389015767827,
+                        -5.869988050328096,
+                        -5.854803593885818,
+                        -5.84043280676638,
+                        -5.826522356547006,
+                        -5.813043664534588,
+                        -5.799696817018415,
+                        -5.7870138152633315,
+                        -5.774690718274137,
+                        -5.7627076624325415,
+                        -5.750801642608887,
+                        -5.73945162736302,
+                        -5.717604495257475,
+                        -5.706858516549069,
+                        -5.696587929403258,
+                        -5.686554629573585,
+                        -5.676747899828313,
+                        -5.666955970176512,
+                        -5.657577319177793,
+                        -5.648396927580871,
+                        -5.639406586434751,
+                        -5.630413109263656,
+                        -5.621783850250122,
+                        -5.613322716039162,
+                        -5.605023280445436,
+                        -5.596707854841746,
+                        -5.588717086982616,
+                        -5.580870692258024,
+                        -5.573163546196492,
+                        -5.565431095965801,
+                        -5.5579908408590475,
+                        -5.550675906901273,
+                        -5.543482142194737,
+                        -5.536405597812999,
+                        -5.529442514782725,
+                        -5.522589312092748,
+                        -5.515842575634619,
+                        -5.509058794643213,
+                        -5.502517462632629,
+                        -5.496073195806489,
+                        -5.489723155582645,
+                        -5.483332440900957,
+                        -5.47716468633947,
+                        -5.471083299722345,
+                        -5.465085895570133,
+                        -5.4590451910738675,
+                        -5.453210648368742,
+                        -5.447453452044339,
+                        -5.441771578196674,
+                        -5.4360445350041875,
+                        -5.430509045651217,
+                        -5.425043224235493,
+                        -5.4196453388934085,
+                        -5.414200990986999,
+                        -5.4089353929735005,
+                        -5.398591939465316,
+                        -5.393403690820715,
+                        -5.388382889445664,
+                        -5.383419469914114,
+                        -5.37851213541937,
+                        -5.3735569746687055,
+                        -5.368759219764491,
+                        -5.364013888199167,
+                        -5.359319846722335,
+                        -5.354577730650908,
+                        -5.349984047528161,
+                        -5.345438445258257,
+                        -5.340939927759061,
+                        -5.3363932918754795,
+                        -5.331987028358168,
+                        -5.327625021253921,
+                        -5.323306390375134,
+                        -5.314706218613216,
+                        -5.3105135516357524,
+                        -5.306360973838451,
+                        -5.302160631781637,
+                        -5.298086788787656,
+                        -4.945770090136603,
+                        -4.683400697906139,
+                        -4.518127589689336,
+                        -4.400881434944637,
+                        -4.308653235865179,
+                        -4.23262147588582,
+                        -4.1666616110606025,
+                        -4.110530216030493,
+                        -4.060830320374823,
+                        -4.016238439713835,
+                        -3.9749810277172406,
+                        -3.9380577079719132,
+                        -3.9040290776562854,
+                        -3.8724740754123057,
+                        -3.8424525744221922,
+                        -3.8149397174786075,
+                        -3.789066464642378,
+                        -3.764648336822588,
+                        -3.7415303384493064,
+                        -3.7195809912238005,
+                        -3.6986878046277543,
+                        -3.6787537870094087,
+                        -3.6787537870094087,
+                        -3.6787537870094087,
+                        -3.6787537870094087
+                    ],
+                    "coefficients": [
+                        0.9969184164341406,
+                        0.9986103112495002,
+                        1.0002280396801875,
+                        1.0007191849220323,
+                        1.000722011670526,
+                        1.0005937706683967,
+                        1.0004316229867662,
+                        1.0002490164364943,
+                        1.0001362184970366,
+                        1.0000434751367737,
+                        0.999949080648925,
+                        0.9998754241299048,
+                        0.9998141960914506,
+                        0.9997758604945483,
+                        0.9997431908530899,
+                        0.9997157811360131,
+                        0.9996939199734941,
+                        0.999677426158092,
+                        0.9996658337000639,
+                        0.9996582286471517,
+                        0.9996539088836145,
+                        0.9996521747587779,
+                        0.9996525103403565,
+                        0.9996546031462591,
+                        0.9996582539793912,
+                        0.9996632804483064,
+                        0.9996694208930494,
+                        0.9996765255410457,
+                        0.9996842956296873,
+                        0.999692450894645,
+                        0.9997006778402744,
+                        0.9997089052069329,
+                        0.999716964034357,
+                        0.9997248136501868,
+                        0.9997324198921015,
+                        0.9997399523240236,
+                        0.9997474354001807,
+                        0.9997572924848882,
+                        0.9997673651081985,
+                        0.999777663340902,
+                        0.999785313593578,
+                        0.9997928560115208,
+                        0.9998003280566456,
+                        0.9998076097488869,
+                        0.9998146418556695,
+                        0.9998213364277112,
+                        0.9998277683847353,
+                        0.9998338885898563,
+                        0.9998397118606654,
+                        0.999845225958612,
+                        0.9998505415583486,
+                        0.9998556530831287,
+                        0.9998605919663315,
+                        0.9998653492542843,
+                        0.9998700097395283,
+                        0.9998745488281312,
+                        0.9998789665766135,
+                        0.9998832249555281,
+                        0.9998873420897583,
+                        0.9998912996487342,
+                        0.9998950769620677,
+                        0.9998986533962148,
+                        0.9999020339412789,
+                        0.9999051778882376,
+                        0.9999080765051882,
+                        0.9999107111659492,
+                        0.9999131243799202,
+                        0.9999153072325906,
+                        0.999917277059703,
+                        0.9999190445664138,
+                        0.9999206596477723,
+                        0.9999221352720239,
+                        0.9999234987667484,
+                        0.9999247671461791,
+                        0.9999259809959646,
+                        0.9999271501603817,
+                        0.9999282897593258,
+                        0.9999294018895414,
+                        0.9999305074626533,
+                        0.9999315990565817,
+                        0.9999330190210265,
+                        0.9999343944443003,
+                        0.9999356765267767,
+                        0.9999365700301577,
+                        0.9999373792618869,
+                        0.9999381001203514,
+                        0.9999387105022456,
+                        0.9999391954925683,
+                        0.9999395412951093,
+                        0.9999397427172332,
+                        0.9999397886198912,
+                        0.9999396750724615,
+                        0.9999394057197772,
+                        0.9999389805536261,
+                        0.999938407339441,
+                        0.9999376972291264,
+                        0.9999368715727396,
+                        0.9999356310030577,
+                        0.9999342103021336,
+                        0.9999326787962896,
+                        0.9999314995840797,
+                        0.999930299729161,
+                        0.9998948734652328,
+                        0.9998022519848904,
+                        0.9998872087857911,
+                        0.9998958485019503,
+                        0.9999299515513294,
+                        0.9999591354146077,
+                        0.9999757809499124,
+                        0.9999790214637555,
+                        0.9999780284135679,
+                        0.9999817300288097,
+                        0.9999914166116883,
+                        1.0000030346814877,
+                        1.00001215847501,
+                        1.000016796762646,
+                        1.0000175489284062,
+                        1.0000161044687923,
+                        1.0000141127731441,
+                        1.0000124235828136,
+                        1.0000111309750745,
+                        1.000009994925629,
+                        1.0000087378067495,
+                        1.0000071772223194,
+                        1.0000058341132527,
+                        1.0000050773979117
+                    ],
+                    "raw_data": [
+                        0.5268969994809741,
+                        0.924840283759978,
+                        0.968035595847338,
+                        0.9664651865558089,
+                        0.9720935431169909,
+                        0.9788642350797775,
+                        0.9811018117173811,
+                        0.9833919164627751,
+                        0.9856856438362928,
+                        0.9874245053355638,
+                        0.9884963504315989,
+                        0.9897897796145201,
+                        0.9905514371774821,
+                        0.9915041883739576,
+                        0.992429769859507,
+                        0.9927971647283635,
+                        0.9932019934211624,
+                        0.9940967825676623,
+                        0.9944028946440965,
+                        0.9950389677654444,
+                        0.9951482503805027,
+                        0.9956753427724693,
+                        0.996033982956694,
+                        0.9964010759398735,
+                        0.996551113121321
+                    ],
+                    "comment": "/250620/OPX1000_DR2_ch3_, n_excluded_data_points=25, s=2e-5, nest=130"
+                },
+                "__class__": "quam_libs.components.flux_line.FluxLine"
+            },
+            "resonator": {
+                "confusion_matrix": [
+                    "[0.445",
+                    "0.555]",
+                    "[0.4165",
+                    "0.5835]"
+                ],
+                "operations": {
+                    "readout": {
+                        "length": 4000,
+                        "amplitude": 0.0577564181069959,
+                        "threshold": -0.00018191308277442072,
+                        "rus_exit_threshold": -0.00015350519888139103,
+                        "integration_weights_angle": -7.001297834493271,
+                        "__class__": "quam.components.pulses.SquareReadoutPulse"
+                    },
+                    "const": {
+                        "length": 100,
+                        "amplitude": 0.5,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "intermediate_frequency": -333905400.0,
+                "core": "q0",
+                "opx_input": "#/wiring/qubits/q0/rr/opx_input",
+                "time_of_flight": 412,
+                "opx_output": "#/wiring/qubits/q0/rr/opx_output",
+                "__class__": "quam_libs.components.readout_resonator.ReadoutResonatorMW"
+            },
+            "anharmonicity": 300000000,
+            "freq_vs_flux_01_quad_term": -2655490558.564422,
+            "freq_vs_flux_01_quart_term": -305627801.80957335,
+            "arbitrary_intermediate_frequency": -417000000.0000002,
+            "T1": 3.7658215663650544e-05,
+            "T2ramsey": 1.0088280510529698e-05,
+            "phi0_current": 38.72180969265969,
+            "phi0_voltage": 0.7744361938531938,
+            "grid_location": "0,1",
+            "__class__": "quam_libs.components.transmon.Transmon"
+        },
+        "q1": {
+            "id": "q1",
+            "xy": {
+                "operations": {
+                    "x180_DragCosine": {
+                        "length": 40,
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.09808335842513895,
+                        "alpha": -0.260000000000002,
+                        "anharmonicity": "#/qubits/q1/anharmonicity",
+                        "detuning": -40000.0,
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.04910318230227816,
+                        "alpha": -0.22000000000000197,
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": -370000.0,
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 3.141592653589793,
+                        "amplitude": 0.0491011725843222,
+                        "alpha": "#../x180_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y180_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": "#../x180_DragCosine/amplitude",
+                        "alpha": "#../x180_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x180_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": 0.04908604684508694,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": -1.5707963267948966,
+                        "amplitude": 0.04901872686787146,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x180_Square": {
+                        "length": 100,
+                        "digital_marker": "ON",
+                        "amplitude": 0.25,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y180_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.25,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x180": "#./x180_DragCosine",
+                    "x90": "#./x90_DragCosine",
+                    "-x90": "#./-x90_DragCosine",
+                    "y180": "#./y180_DragCosine",
+                    "y90": "#./y90_DragCosine",
+                    "-y90": "#./-y90_DragCosine",
+                    "saturation": {
+                        "length": 10000,
+                        "digital_marker": "ON",
+                        "amplitude": 0.002109934309176443,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "intermediate_frequency": -184494075.28235623,
+                "core": "q1",
+                "opx_output": "#/wiring/qubits/q1/xy/opx_output",
+                "__class__": "quam.components.channels.MWChannel"
+            },
+            "z": {
+                "operations": {
+                    "const": {
+                        "length": 64000,
+                        "amplitude": 1.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z0": {
+                        "length": 32,
+                        "amplitude": 0.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z90": {
+                        "length": 32,
+                        "amplitude": 0.017484936283133613,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z180": {
+                        "length": 32,
+                        "amplitude": 0.024727434028836974,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-z90": {
+                        "length": 32,
+                        "amplitude": 0.03028479800949194,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "opx_output": "#/wiring/qubits/q1/z/opx_output",
+                "independent_offset": 0.09435982250994165,
+                "min_offset": -0.7459080169619865,
+                "__class__": "quam_libs.components.flux_line.FluxLine"
+            },
+            "resonator": {
+                "confusion_matrix": [
+                    "[0.945",
+                    "0.055]",
+                    "[0.0905",
+                    "0.9095]"
+                ],
+                "operations": {
+                    "readout": {
+                        "length": 4000,
+                        "amplitude": 0.07974568981982016,
+                        "threshold": 0.00037661617368629004,
+                        "rus_exit_threshold": 0.00024605344778894474,
+                        "integration_weights_angle": 0.8928621236840808,
+                        "__class__": "quam.components.pulses.SquareReadoutPulse"
+                    },
+                    "const": {
+                        "length": 100,
+                        "amplitude": 0.5,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "intermediate_frequency": -249101277.0,
+                "core": "q1",
+                "opx_input": "#/wiring/qubits/q1/rr/opx_input",
+                "time_of_flight": 412,
+                "opx_output": "#/wiring/qubits/q1/rr/opx_output",
+                "__class__": "quam_libs.components.readout_resonator.ReadoutResonatorMW"
+            },
+            "anharmonicity": 299000000,
+            "freq_vs_flux_01_quad_term": -29643808255.659138,
+            "freq_vs_flux_01_quart_term": -210585264.68516862,
+            "arbitrary_intermediate_frequency": -298200000.00000036,
+            "T1": 7.981870394969381e-05,
+            "T2ramsey": 2.2070386911977053e-05,
+            "phi0_current": 34.204636177842225,
+            "phi0_voltage": 0.6840927235568445,
+            "chi": -350000.0,
+            "grid_location": "1,1",
+            "__class__": "quam_libs.components.transmon.Transmon"
+        },
+        "q2": {
+            "id": "q2",
+            "xy": {
+                "operations": {
+                    "x180_DragCosine": {
+                        "length": 40,
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.09417988213676848,
+                        "alpha": -0.9000000000000026,
+                        "anharmonicity": "#/qubits/q2/anharmonicity",
+                        "detuning": 1680000.0,
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.046832734979750996,
+                        "alpha": -1.8200000000000034,
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": 30000.0,
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 3.141592653589793,
+                        "amplitude": 0.046761821221680655,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y180_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": "#../x180_DragCosine/amplitude",
+                        "alpha": "#../x180_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x180_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": 0.046787454529103725,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": -1.5707963267948966,
+                        "amplitude": 0.04674000000000001,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x180_Square": {
+                        "length": 100,
+                        "digital_marker": "ON",
+                        "amplitude": 0.1868629189872728,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y180_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.25,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x180": "#./x180_DragCosine",
+                    "x90": "#./x90_DragCosine",
+                    "-x90": "#./-x90_DragCosine",
+                    "y180": "#./y180_DragCosine",
+                    "y90": "#./y90_DragCosine",
+                    "-y90": "#./-y90_DragCosine",
+                    "saturation": {
+                        "length": 20000,
+                        "digital_marker": "ON",
+                        "amplitude": 0.018573262724788216,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "EF_x180": {
+                        "length": 100,
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.142047,
+                        "alpha": 0.0,
+                        "anharmonicity": "#/qubits/q2/anharmonicity",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "EF_x90": {
+                        "length": 100,
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.0710235,
+                        "alpha": 0.0,
+                        "anharmonicity": "#/qubits/q2/anharmonicity",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "EF_y90": {
+                        "length": 100,
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": 0.0710235,
+                        "alpha": 0.0,
+                        "anharmonicity": "#/qubits/q2/anharmonicity",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    }
+                },
+                "intermediate_frequency": -233139670.29896367,
+                "core": "q2",
+                "opx_output": "#/wiring/qubits/q2/xy/opx_output",
+                "__class__": "quam.components.channels.MWChannel"
+            },
+            "z": {
+                "operations": {
+                    "const": {
+                        "length": 64000,
+                        "amplitude": 1.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z0": {
+                        "length": 32,
+                        "amplitude": 0.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z90": {
+                        "length": 32,
+                        "amplitude": 0.01866836553224297,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z180": {
+                        "length": 32,
+                        "amplitude": 0.026401055723036436,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-z90": {
+                        "length": 32,
+                        "amplitude": 0.03233455759611244,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "opx_output": "#/wiring/qubits/q2/z/opx_output",
+                "independent_offset": 0.2635101862852106,
+                "joint_offset": -0.5308831133033133,
+                "min_offset": 0.5,
+                "arbitrary_offset": 0.020256258401304555,
+                "step_response_model_parameters": {
+                    "degree": 3,
+                    "knots": [
+                        -7.585026652029163,
+                        -7.585026652029163,
+                        -7.585026652029163,
+                        -7.585026652029163,
+                        -7.130768280269016,
+                        -6.917214629683547,
+                        -6.774690718274135,
+                        -6.667561540084393,
+                        -6.508638306165727,
+                        -6.447331783887806,
+                        -6.393618634889395,
+                        -6.3448615651886175,
+                        -6.301899454376611,
+                        -6.226945306635737,
+                        -6.193141970481181,
+                        -6.162411561764488,
+                        -6.133712660915805,
+                        -6.106793246940152,
+                        -6.080921907623926,
+                        -6.05700040663396,
+                        -6.0343280287798935,
+                        -6.012780770091995,
+                        -5.991825815993574,
+                        -5.972242795309446,
+                        -5.953504835665291,
+                        -5.935542010773081,
+                        -5.9179330657148865,
+                        -5.901356274182943,
+                        -5.885389015767827,
+                        -5.869988050328096,
+                        -5.854803593885818,
+                        -5.84043280676638,
+                        -5.826522356547006,
+                        -5.813043664534588,
+                        -5.799696817018415,
+                        -5.7870138152633315,
+                        -5.774690718274137,
+                        -5.7627076624325415,
+                        -5.750801642608887,
+                        -5.73945162736302,
+                        -5.717604495257475,
+                        -5.706858516549069,
+                        -5.696587929403258,
+                        -5.686554629573585,
+                        -5.676747899828313,
+                        -5.666955970176512,
+                        -5.657577319177793,
+                        -5.648396927580871,
+                        -5.639406586434751,
+                        -5.630413109263656,
+                        -5.621783850250122,
+                        -5.613322716039162,
+                        -5.605023280445436,
+                        -5.596707854841746,
+                        -5.588717086982616,
+                        -5.580870692258024,
+                        -5.573163546196492,
+                        -5.565431095965801,
+                        -5.5579908408590475,
+                        -5.550675906901273,
+                        -5.543482142194737,
+                        -5.536405597812999,
+                        -5.529442514782725,
+                        -5.522589312092748,
+                        -5.515842575634619,
+                        -5.509058794643213,
+                        -5.502517462632629,
+                        -5.496073195806489,
+                        -5.489723155582645,
+                        -5.483332440900957,
+                        -5.47716468633947,
+                        -5.471083299722345,
+                        -5.465085895570133,
+                        -5.4590451910738675,
+                        -5.453210648368742,
+                        -5.447453452044339,
+                        -5.441771578196674,
+                        -5.4360445350041875,
+                        -5.430509045651217,
+                        -5.425043224235493,
+                        -5.4196453388934085,
+                        -5.414200990986999,
+                        -5.4089353929735005,
+                        -5.398591939465316,
+                        -5.393403690820715,
+                        -5.388382889445664,
+                        -5.383419469914114,
+                        -5.37851213541937,
+                        -5.3735569746687055,
+                        -5.368759219764491,
+                        -5.364013888199167,
+                        -5.359319846722335,
+                        -5.354577730650908,
+                        -5.349984047528161,
+                        -5.345438445258257,
+                        -5.340939927759061,
+                        -5.3363932918754795,
+                        -5.331987028358168,
+                        -5.327625021253921,
+                        -5.323306390375134,
+                        -5.314706218613216,
+                        -5.3105135516357524,
+                        -5.306360973838451,
+                        -5.302160631781637,
+                        -5.298086788787656,
+                        -4.945770090136603,
+                        -4.683400697906139,
+                        -4.518127589689336,
+                        -4.400881434944637,
+                        -4.308653235865179,
+                        -4.23262147588582,
+                        -4.1666616110606025,
+                        -4.110530216030493,
+                        -4.060830320374823,
+                        -4.016238439713835,
+                        -3.9749810277172406,
+                        -3.9380577079719132,
+                        -3.9040290776562854,
+                        -3.8724740754123057,
+                        -3.8424525744221922,
+                        -3.8149397174786075,
+                        -3.789066464642378,
+                        -3.764648336822588,
+                        -3.7415303384493064,
+                        -3.7195809912238005,
+                        -3.6986878046277543,
+                        -3.6787537870094087,
+                        -3.6787537870094087,
+                        -3.6787537870094087,
+                        -3.6787537870094087
+                    ],
+                    "coefficients": [
+                        0.9969184164341406,
+                        0.9986103112495002,
+                        1.0002280396801875,
+                        1.0007191849220323,
+                        1.000722011670526,
+                        1.0005937706683967,
+                        1.0004316229867662,
+                        1.0002490164364943,
+                        1.0001362184970366,
+                        1.0000434751367737,
+                        0.999949080648925,
+                        0.9998754241299048,
+                        0.9998141960914506,
+                        0.9997758604945483,
+                        0.9997431908530899,
+                        0.9997157811360131,
+                        0.9996939199734941,
+                        0.999677426158092,
+                        0.9996658337000639,
+                        0.9996582286471517,
+                        0.9996539088836145,
+                        0.9996521747587779,
+                        0.9996525103403565,
+                        0.9996546031462591,
+                        0.9996582539793912,
+                        0.9996632804483064,
+                        0.9996694208930494,
+                        0.9996765255410457,
+                        0.9996842956296873,
+                        0.999692450894645,
+                        0.9997006778402744,
+                        0.9997089052069329,
+                        0.999716964034357,
+                        0.9997248136501868,
+                        0.9997324198921015,
+                        0.9997399523240236,
+                        0.9997474354001807,
+                        0.9997572924848882,
+                        0.9997673651081985,
+                        0.999777663340902,
+                        0.999785313593578,
+                        0.9997928560115208,
+                        0.9998003280566456,
+                        0.9998076097488869,
+                        0.9998146418556695,
+                        0.9998213364277112,
+                        0.9998277683847353,
+                        0.9998338885898563,
+                        0.9998397118606654,
+                        0.999845225958612,
+                        0.9998505415583486,
+                        0.9998556530831287,
+                        0.9998605919663315,
+                        0.9998653492542843,
+                        0.9998700097395283,
+                        0.9998745488281312,
+                        0.9998789665766135,
+                        0.9998832249555281,
+                        0.9998873420897583,
+                        0.9998912996487342,
+                        0.9998950769620677,
+                        0.9998986533962148,
+                        0.9999020339412789,
+                        0.9999051778882376,
+                        0.9999080765051882,
+                        0.9999107111659492,
+                        0.9999131243799202,
+                        0.9999153072325906,
+                        0.999917277059703,
+                        0.9999190445664138,
+                        0.9999206596477723,
+                        0.9999221352720239,
+                        0.9999234987667484,
+                        0.9999247671461791,
+                        0.9999259809959646,
+                        0.9999271501603817,
+                        0.9999282897593258,
+                        0.9999294018895414,
+                        0.9999305074626533,
+                        0.9999315990565817,
+                        0.9999330190210265,
+                        0.9999343944443003,
+                        0.9999356765267767,
+                        0.9999365700301577,
+                        0.9999373792618869,
+                        0.9999381001203514,
+                        0.9999387105022456,
+                        0.9999391954925683,
+                        0.9999395412951093,
+                        0.9999397427172332,
+                        0.9999397886198912,
+                        0.9999396750724615,
+                        0.9999394057197772,
+                        0.9999389805536261,
+                        0.999938407339441,
+                        0.9999376972291264,
+                        0.9999368715727396,
+                        0.9999356310030577,
+                        0.9999342103021336,
+                        0.9999326787962896,
+                        0.9999314995840797,
+                        0.999930299729161,
+                        0.9998948734652328,
+                        0.9998022519848904,
+                        0.9998872087857911,
+                        0.9998958485019503,
+                        0.9999299515513294,
+                        0.9999591354146077,
+                        0.9999757809499124,
+                        0.9999790214637555,
+                        0.9999780284135679,
+                        0.9999817300288097,
+                        0.9999914166116883,
+                        1.0000030346814877,
+                        1.00001215847501,
+                        1.000016796762646,
+                        1.0000175489284062,
+                        1.0000161044687923,
+                        1.0000141127731441,
+                        1.0000124235828136,
+                        1.0000111309750745,
+                        1.000009994925629,
+                        1.0000087378067495,
+                        1.0000071772223194,
+                        1.0000058341132527,
+                        1.0000050773979117
+                    ],
+                    "raw_data": [
+                        0.5268969994809741,
+                        0.924840283759978,
+                        0.968035595847338,
+                        0.9664651865558089,
+                        0.9720935431169909,
+                        0.9788642350797775,
+                        0.9811018117173811,
+                        0.9833919164627751,
+                        0.9856856438362928,
+                        0.9874245053355638,
+                        0.9884963504315989,
+                        0.9897897796145201,
+                        0.9905514371774821,
+                        0.9915041883739576,
+                        0.992429769859507,
+                        0.9927971647283635,
+                        0.9932019934211624,
+                        0.9940967825676623,
+                        0.9944028946440965,
+                        0.9950389677654444,
+                        0.9951482503805027,
+                        0.9956753427724693,
+                        0.996033982956694,
+                        0.9964010759398735,
+                        0.996551113121321
+                    ],
+                    "comment": "/250620/OPX1000_DR2_ch3_, n_excluded_data_points=25, s=2e-5, nest=130"
+                },
+                "__class__": "quam_libs.components.flux_line.FluxLine"
+            },
+            "resonator": {
+                "confusion_matrix": [
+                    "[0.9175",
+                    "0.0825]",
+                    "[0.109",
+                    "0.891]"
+                ],
+                "GEF_frequency_shift": "#/qubits/q2/GEF_frequency_shift",
+                "operations": {
+                    "readout": {
+                        "length": 4000,
+                        "amplitude": 0.07145395924114875,
+                        "threshold": 0.0002216766111922741,
+                        "rus_exit_threshold": 3.2090030443695544e-05,
+                        "integration_weights_angle": -16.157268199054496,
+                        "__class__": "quam.components.pulses.SquareReadoutPulse"
+                    },
+                    "const": {
+                        "length": 100,
+                        "amplitude": 0.53,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "intermediate_frequency": -162871355.0,
+                "core": "q2",
+                "opx_input": "#/wiring/qubits/q2/rr/opx_input",
+                "time_of_flight": 412,
+                "opx_output": "#/wiring/qubits/q2/rr/opx_output",
+                "__class__": "quam_libs.components.readout_resonator.ReadoutResonatorMW"
+            },
+            "anharmonicity": 300000000,
+            "freq_vs_flux_01_quad_term": -23122789200.560974,
+            "freq_vs_flux_01_quart_term": -264867519.1323364,
+            "arbitrary_intermediate_frequency": 3833696.9978229403,
+            "T1": 9.115040718570018e-05,
+            "T2ramsey": 2.2097540413483693e-05,
+            "phi0_current": 36.636351853252634,
+            "phi0_voltage": 0.7327270370650527,
+            "GEF_frequency_shift": -250000,
+            "chi": -350000.0,
+            "grid_location": "2,1",
+            "__class__": "quam_libs.components.transmon.Transmon"
+        },
+        "q3": {
+            "id": "q3",
+            "xy": {
+                "operations": {
+                    "x180_DragCosine": {
+                        "length": 40,
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.12219862613811236,
+                        "alpha": -0.7600000000000025,
+                        "anharmonicity": "#/qubits/q3/anharmonicity",
+                        "detuning": 660000.0,
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.06109055217102301,
+                        "alpha": -0.8400000000000025,
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": 50000.0,
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 3.141592653589793,
+                        "amplitude": 0.0610636494089945,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y180_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": "#../x180_DragCosine/amplitude",
+                        "alpha": "#../x180_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x180_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": 0.060948397296686725,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": -1.5707963267948966,
+                        "amplitude": 0.061055608767236084,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x180_Square": {
+                        "length": 100,
+                        "digital_marker": "ON",
+                        "amplitude": 0.1868629189872728,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y180_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.25,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x180": "#./x180_DragCosine",
+                    "x90": "#./x90_DragCosine",
+                    "-x90": "#./-x90_DragCosine",
+                    "y180": "#./y180_DragCosine",
+                    "y90": "#./y90_DragCosine",
+                    "-y90": "#./-y90_DragCosine",
+                    "saturation": {
+                        "length": 20000,
+                        "digital_marker": "ON",
+                        "amplitude": 0.03209436421604413,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "intermediate_frequency": -258559120.07449138,
+                "core": "q3",
+                "opx_output": "#/wiring/qubits/q3/xy/opx_output",
+                "__class__": "quam.components.channels.MWChannel"
+            },
+            "z": {
+                "operations": {
+                    "const": {
+                        "length": 64000,
+                        "amplitude": 1.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z0": {
+                        "length": 32,
+                        "amplitude": 0.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z90": {
+                        "length": 32,
+                        "amplitude": 0.02155597394763073,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z180": {
+                        "length": 32,
+                        "amplitude": 0.030484750706900484,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-z90": {
+                        "length": 32,
+                        "amplitude": 0.03733604208392748,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "opx_output": "#/wiring/qubits/q3/z/opx_output",
+                "independent_offset": 0.20101675097269064,
+                "joint_offset": 0.47363582301703144,
+                "min_offset": 0.5,
+                "arbitrary_offset": 0.020256258401304555,
+                "__class__": "quam_libs.components.flux_line.FluxLine"
+            },
+            "resonator": {
+                "confusion_matrix": [
+                    "[0.9545",
+                    "0.0455]",
+                    "[0.07",
+                    "0.93]"
+                ],
+                "operations": {
+                    "readout": {
+                        "length": 4000,
+                        "amplitude": 0.19569743791338587,
+                        "threshold": 0.0007983942458493268,
+                        "rus_exit_threshold": 0.0005776909097630498,
+                        "integration_weights_angle": -7.971792168788102,
+                        "__class__": "quam.components.pulses.SquareReadoutPulse"
+                    },
+                    "const": {
+                        "length": 100,
+                        "amplitude": 0.5,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "intermediate_frequency": -42805584.0,
+                "core": "q3",
+                "opx_input": "#/wiring/qubits/q3/rr/opx_input",
+                "time_of_flight": 412,
+                "opx_output": "#/wiring/qubits/q3/rr/opx_output",
+                "__class__": "quam_libs.components.readout_resonator.ReadoutResonatorMW"
+            },
+            "anharmonicity": 300000000,
+            "freq_vs_flux_01_quad_term": -18833045447.314297,
+            "freq_vs_flux_01_quart_term": -115034804.1300691,
+            "arbitrary_intermediate_frequency": -101889.47855913562,
+            "T1": 0.0001060539569988398,
+            "T2ramsey": 0.00021640792473240442,
+            "phi0_current": 41.7590774972036,
+            "phi0_voltage": 0.835181549944072,
+            "chi": -250000.0,
+            "grid_location": "0,0",
+            "__class__": "quam_libs.components.transmon.Transmon"
+        },
+        "q4": {
+            "id": "q4",
+            "xy": {
+                "operations": {
+                    "x180_DragCosine": {
+                        "length": 40,
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.08557879922137435,
+                        "alpha": -0.280000000000002,
+                        "anharmonicity": "#/qubits/q4/anharmonicity",
+                        "detuning": 50000.0,
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.0429477354266447,
+                        "alpha": -0.12000000000000188,
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 3.141592653589793,
+                        "amplitude": 0.04275471324582935,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x180_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y180_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": "#../x180_DragCosine/amplitude",
+                        "alpha": "#../x180_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x180_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": 0.04296877500000002,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": -1.5707963267948966,
+                        "amplitude": 0.042855813000000006,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x180_Square": {
+                        "length": 100,
+                        "digital_marker": "ON",
+                        "amplitude": 0.18261261534401493,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y180_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.25,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x180": "#./x180_DragCosine",
+                    "x90": "#./x90_DragCosine",
+                    "-x90": "#./-x90_DragCosine",
+                    "y180": "#./y180_DragCosine",
+                    "y90": "#./y90_DragCosine",
+                    "-y90": "#./-y90_DragCosine",
+                    "saturation": {
+                        "length": 20000,
+                        "digital_marker": "ON",
+                        "amplitude": 0.029617345909234715,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "intermediate_frequency": -202804302.0691144,
+                "core": "q4",
+                "opx_output": "#/wiring/qubits/q4/xy/opx_output",
+                "__class__": "quam.components.channels.MWChannel"
+            },
+            "z": {
+                "operations": {
+                    "const": {
+                        "length": 100,
+                        "amplitude": 1.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z0": {
+                        "length": 32,
+                        "amplitude": 0.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z90": {
+                        "length": 32,
+                        "amplitude": 0.020049966573716906,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z180": {
+                        "length": 32,
+                        "amplitude": 0.028354934653677666,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-z90": {
+                        "length": 32,
+                        "amplitude": 0.03472756079573536,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "opx_output": "#/wiring/qubits/q4/z/opx_output",
+                "independent_offset": 0.013491402056130043,
+                "joint_offset": 0.8223412979121669,
+                "min_offset": -0.30938312334169515,
+                "__class__": "quam_libs.components.flux_line.FluxLine"
+            },
+            "resonator": {
+                "confusion_matrix": [
+                    "[0.8385",
+                    "0.1615]",
+                    "[0.111",
+                    "0.889]"
+                ],
+                "operations": {
+                    "readout": {
+                        "length": 4000,
+                        "amplitude": 0.1465186106437642,
+                        "threshold": 0.00034243728801230456,
+                        "rus_exit_threshold": 0.000165645588700961,
+                        "integration_weights_angle": -4.874553947150556,
+                        "__class__": "quam.components.pulses.SquareReadoutPulse"
+                    },
+                    "const": {
+                        "length": 100,
+                        "amplitude": 0.5,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "intermediate_frequency": 52724605.0,
+                "core": "q4",
+                "opx_input": "#/wiring/qubits/q4/rr/opx_input",
+                "time_of_flight": 412,
+                "opx_output": "#/wiring/qubits/q4/rr/opx_output",
+                "__class__": "quam_libs.components.readout_resonator.ReadoutResonatorMW"
+            },
+            "anharmonicity": 298800000,
+            "freq_vs_flux_01_quad_term": -21325320738.125793,
+            "freq_vs_flux_01_quart_term": -223817628.83254272,
+            "T1": 5.536453195061953e-05,
+            "T2ramsey": 2.8643888823168674e-05,
+            "phi0_current": 38.71377994318102,
+            "phi0_voltage": 0.7742755988636203,
+            "chi": -250000.0,
+            "grid_location": "1,0",
+            "__class__": "quam_libs.components.transmon.Transmon"
+        },
+        "q5": {
+            "id": "q5",
+            "xy": {
+                "operations": {
+                    "x180_DragCosine": {
+                        "length": 40,
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.4375782581581732,
+                        "alpha": -0.7400000000000024,
+                        "anharmonicity": "#/qubits/q5/anharmonicity",
+                        "detuning": 310000.0,
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.2697167831354422,
+                        "alpha": 0,
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": -130000.0,
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-x90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 3.141592653589793,
+                        "amplitude": 0.2663317043377535,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x180_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y180_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": "#../x180_DragCosine/amplitude",
+                        "alpha": "#../x180_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x180_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": 0.27115213283860323,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "-y90_DragCosine": {
+                        "length": "#../x180_DragCosine/length",
+                        "digital_marker": "ON",
+                        "axis_angle": -1.5707963267948966,
+                        "amplitude": 0.269546669447343,
+                        "alpha": "#../x90_DragCosine/alpha",
+                        "anharmonicity": "#../x180_DragCosine/anharmonicity",
+                        "detuning": "#../x90_DragCosine/detuning",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "x180_Square": {
+                        "length": 100,
+                        "digital_marker": "ON",
+                        "amplitude": 0.25,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-x90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y180_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.25,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": 0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-y90_Square": {
+                        "length": "#../x180_Square/length",
+                        "digital_marker": "ON",
+                        "amplitude": -0.125,
+                        "axis_angle": 90,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "x180": "#./x180_DragCosine",
+                    "x90": "#./x90_DragCosine",
+                    "-x90": "#./-x90_DragCosine",
+                    "y180": "#./y180_DragCosine",
+                    "y90": "#./y90_DragCosine",
+                    "-y90": "#./-y90_DragCosine",
+                    "saturation": {
+                        "length": 20000,
+                        "digital_marker": "ON",
+                        "amplitude": 0.7365933880391126,
+                        "axis_angle": 0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "EF_x180": {
+                        "length": 200,
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.21246,
+                        "alpha": 0.0,
+                        "anharmonicity": "#/qubits/q5/anharmonicity",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "EF_x90": {
+                        "length": 200,
+                        "digital_marker": "ON",
+                        "axis_angle": 0,
+                        "amplitude": 0.10623,
+                        "alpha": 0.0,
+                        "anharmonicity": "#/qubits/q5/anharmonicity",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    },
+                    "EF_y90": {
+                        "length": 200,
+                        "digital_marker": "ON",
+                        "axis_angle": 1.5707963267948966,
+                        "amplitude": 0.10623,
+                        "alpha": 0.0,
+                        "anharmonicity": "#/qubits/q5/anharmonicity",
+                        "__class__": "quam.components.pulses.DragCosinePulse"
+                    }
+                },
+                "intermediate_frequency": -353611329.6573496,
+                "core": "q5",
+                "opx_output": "#/wiring/qubits/q5/xy/opx_output",
+                "__class__": "quam.components.channels.MWChannel"
+            },
+            "z": {
+                "operations": {
+                    "const": {
+                        "length": 100,
+                        "amplitude": 1.5,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z0": {
+                        "length": 32,
+                        "amplitude": 0.0,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z90": {
+                        "length": 32,
+                        "amplitude": 0.026283514344360992,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "z180": {
+                        "length": 32,
+                        "amplitude": 0.0371705024526231,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    },
+                    "-z90": {
+                        "length": 32,
+                        "amplitude": 0.04552438224589862,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "opx_output": "#/wiring/qubits/q5/z/opx_output",
+                "independent_offset": 0.2768835094294566,
+                "__class__": "quam_libs.components.flux_line.FluxLine"
+            },
+            "resonator": {
+                "confusion_matrix": [
+                    "[0.9595",
+                    "0.0405]",
+                    "[0.0145",
+                    "0.9855]"
+                ],
+                "GEF_frequency_shift": "#/qubits/q5/GEF_frequency_shift",
+                "gef_centers": [
+                    [
+                        0.0009231079373064019,
+                        0.000588657383038568
+                    ],
+                    [
+                        -0.0001032873175293335,
+                        0.001086408910115816
+                    ],
+                    [
+                        0.00048531576153525884,
+                        0.0012953729045875194
+                    ]
+                ],
+                "gef_confusion_matrix": [
+                    [
+                        0.9715,
+                        0.011,
+                        0.0175
+                    ],
+                    [
+                        0.0435,
+                        0.874,
+                        0.0825
+                    ],
+                    [
+                        0.0325,
+                        0.1295,
+                        0.838
+                    ]
+                ],
+                "operations": {
+                    "readout": {
+                        "length": 4000,
+                        "amplitude": 0.17753792874964106,
+                        "threshold": 0.0007057712063069292,
+                        "rus_exit_threshold": 0.00036168899703303543,
+                        "integration_weights_angle": 2.383532705320072,
+                        "__class__": "quam.components.pulses.SquareReadoutPulse"
+                    },
+                    "const": {
+                        "length": 100,
+                        "amplitude": 0.5,
+                        "__class__": "quam.components.pulses.SquarePulse"
+                    }
+                },
+                "intermediate_frequency": 153464218.0,
+                "core": "q5",
+                "opx_input": "#/wiring/qubits/q5/rr/opx_input",
+                "time_of_flight": 412,
+                "opx_output": "#/wiring/qubits/q5/rr/opx_output",
+                "__class__": "quam_libs.components.readout_resonator.ReadoutResonatorMW"
+            },
+            "anharmonicity": 298600000,
+            "freq_vs_flux_01_quad_term": -17768050859.175026,
+            "freq_vs_flux_01_quart_term": -177319919.93999967,
+            "arbitrary_intermediate_frequency": 228192.86572046316,
+            "T1": 0.00012884101598066043,
+            "T2ramsey": 2.69154443277557e-06,
+            "phi0_current": 42.84847473612541,
+            "phi0_voltage": 0.8569694947225083,
+            "GEF_frequency_shift": -400000,
+            "chi": -400000.0,
+            "grid_location": "2,0",
+            "__class__": "quam_libs.components.transmon.Transmon"
+        }
+    },
+    "wiring": {
+        "qubits": {
+            "q0": {
+                "rr": {
+                    "opx_input": "#/ports/mw_inputs/con1/1/1",
+                    "opx_output": "#/ports/mw_outputs/con1/1/1"
+                },
+                "xy": {
+                    "opx_output": "#/ports/mw_outputs/con1/1/2"
+                },
+                "z": {
+                    "opx_output": "#/ports/analog_outputs/con1/5/1"
+                }
+            },
+            "q1": {
+                "rr": {
+                    "opx_input": "#/ports/mw_inputs/con1/1/1",
+                    "opx_output": "#/ports/mw_outputs/con1/1/1"
+                },
+                "xy": {
+                    "opx_output": "#/ports/mw_outputs/con1/1/3"
+                },
+                "z": {
+                    "opx_output": "#/ports/analog_outputs/con1/5/2"
+                }
+            },
+            "q2": {
+                "rr": {
+                    "opx_input": "#/ports/mw_inputs/con1/1/1",
+                    "opx_output": "#/ports/mw_outputs/con1/1/1"
+                },
+                "xy": {
+                    "opx_output": "#/ports/mw_outputs/con1/1/4"
+                },
+                "z": {
+                    "opx_output": "#/ports/analog_outputs/con1/5/3"
+                }
+            },
+            "q3": {
+                "rr": {
+                    "opx_input": "#/ports/mw_inputs/con1/1/1",
+                    "opx_output": "#/ports/mw_outputs/con1/1/1"
+                },
+                "xy": {
+                    "opx_output": "#/ports/mw_outputs/con1/1/5"
+                },
+                "z": {
+                    "opx_output": "#/ports/analog_outputs/con1/5/4"
+                }
+            },
+            "q4": {
+                "rr": {
+                    "opx_input": "#/ports/mw_inputs/con1/1/1",
+                    "opx_output": "#/ports/mw_outputs/con1/1/1"
+                },
+                "xy": {
+                    "opx_output": "#/ports/mw_outputs/con1/1/6"
+                },
+                "z": {
+                    "opx_output": "#/ports/analog_outputs/con1/5/5"
+                }
+            },
+            "q5": {
+                "rr": {
+                    "opx_input": "#/ports/mw_inputs/con1/1/1",
+                    "opx_output": "#/ports/mw_outputs/con1/1/1"
+                },
+                "xy": {
+                    "opx_output": "#/ports/mw_outputs/con1/1/7"
+                },
+                "z": {
+                    "opx_output": "#/ports/analog_outputs/con1/5/6"
+                }
+            }
+        }
+    },
+    "network": {
+        "host": "10.1.1.15",
+        "port": null,
+        "cloud": true,
+        "octave_ips": [],
+        "cluster_name": "OPXK3",
+        "octave_ports": [],
+        "quantum_computer_backend": "qolab"
+    },
+    "active_qubit_names": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+    ],
+    "ports": {
+        "analog_outputs": {
+            "con1": {
+                "5": {
+                    "1": {
+                        "controller_id": "con1",
+                        "fem_id": 5,
+                        "port_id": 1,
+                        "delay": 160,
+                        "upsampling_mode": "pulse",
+                        "output_mode": "amplified",
+                        "__class__": "quam.components.ports.analog_outputs.LFFEMAnalogOutputPort"
+                    },
+                    "2": {
+                        "controller_id": "con1",
+                        "fem_id": 5,
+                        "port_id": 2,
+                        "delay": 158,
+                        "upsampling_mode": "pulse",
+                        "output_mode": "amplified",
+                        "__class__": "quam.components.ports.analog_outputs.LFFEMAnalogOutputPort"
+                    },
+                    "3": {
+                        "controller_id": "con1",
+                        "fem_id": 5,
+                        "port_id": 3,
+                        "delay": 156,
+                        "upsampling_mode": "pulse",
+                        "output_mode": "amplified",
+                        "__class__": "quam.components.ports.analog_outputs.LFFEMAnalogOutputPort"
+                    },
+                    "4": {
+                        "controller_id": "con1",
+                        "fem_id": 5,
+                        "port_id": 4,
+                        "delay": 157,
+                        "upsampling_mode": "pulse",
+                        "output_mode": "amplified",
+                        "__class__": "quam.components.ports.analog_outputs.LFFEMAnalogOutputPort"
+                    },
+                    "5": {
+                        "controller_id": "con1",
+                        "fem_id": 5,
+                        "port_id": 5,
+                        "delay": 240,
+                        "upsampling_mode": "pulse",
+                        "output_mode": "amplified",
+                        "__class__": "quam.components.ports.analog_outputs.LFFEMAnalogOutputPort"
+                    },
+                    "6": {
+                        "controller_id": "con1",
+                        "fem_id": 5,
+                        "port_id": 6,
+                        "delay": 157,
+                        "upsampling_mode": "pulse",
+                        "output_mode": "amplified",
+                        "__class__": "quam.components.ports.analog_outputs.LFFEMAnalogOutputPort"
+                    }
+                }
+            }
+        },
+        "mw_outputs": {
+            "con1": {
+                "1": {
+                    "1": {
+                        "controller_id": "con1",
+                        "fem_id": 1,
+                        "port_id": 1,
+                        "band": 2,
+                        "upconverter_frequency": 6250000000,
+                        "full_scale_power_dbm": -5,
+                        "__class__": "quam.components.ports.analog_outputs.MWFEMAnalogOutputPort"
+                    },
+                    "2": {
+                        "controller_id": "con1",
+                        "fem_id": 1,
+                        "port_id": 2,
+                        "band": 2,
+                        "upconverter_frequency": 5300000000,
+                        "full_scale_power_dbm": 10,
+                        "__class__": "quam.components.ports.analog_outputs.MWFEMAnalogOutputPort"
+                    },
+                    "3": {
+                        "controller_id": "con1",
+                        "fem_id": 1,
+                        "port_id": 3,
+                        "band": 2,
+                        "upconverter_frequency": 5300000000,
+                        "full_scale_power_dbm": 10,
+                        "__class__": "quam.components.ports.analog_outputs.MWFEMAnalogOutputPort"
+                    },
+                    "4": {
+                        "controller_id": "con1",
+                        "fem_id": 1,
+                        "port_id": 4,
+                        "band": 2,
+                        "upconverter_frequency": 5300000000,
+                        "full_scale_power_dbm": 10,
+                        "__class__": "quam.components.ports.analog_outputs.MWFEMAnalogOutputPort"
+                    },
+                    "5": {
+                        "controller_id": "con1",
+                        "fem_id": 1,
+                        "port_id": 5,
+                        "band": 2,
+                        "upconverter_frequency": 5300000000,
+                        "full_scale_power_dbm": 10,
+                        "__class__": "quam.components.ports.analog_outputs.MWFEMAnalogOutputPort"
+                    },
+                    "6": {
+                        "controller_id": "con1",
+                        "fem_id": 1,
+                        "port_id": 6,
+                        "band": 2,
+                        "upconverter_frequency": 5300000000,
+                        "full_scale_power_dbm": 10,
+                        "__class__": "quam.components.ports.analog_outputs.MWFEMAnalogOutputPort"
+                    },
+                    "7": {
+                        "controller_id": "con1",
+                        "fem_id": 1,
+                        "port_id": 7,
+                        "band": 2,
+                        "upconverter_frequency": 5300000000,
+                        "full_scale_power_dbm": 10,
+                        "__class__": "quam.components.ports.analog_outputs.MWFEMAnalogOutputPort"
+                    }
+                }
+            }
+        },
+        "mw_inputs": {
+            "con1": {
+                "1": {
+                    "1": {
+                        "controller_id": "con1",
+                        "fem_id": 1,
+                        "port_id": 1,
+                        "band": 2,
+                        "downconverter_frequency": 6250000000,
+                        "__class__": "quam.components.ports.analog_inputs.MWFEMAnalogInputPort"
+                    }
+                }
+            }
+        },
+        "__class__": "quam.components.ports.ports_containers.FEMPortsContainer"
+    },
+    "__class__": "quam_libs.components.quam_root.FEMQuAM"
+}
